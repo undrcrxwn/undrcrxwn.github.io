@@ -1,5 +1,5 @@
 export default class Movies {
-  static apiToken = "0HNJ0KC-T4GMEYF-PBQZPTE-5AVP50P"
+  static apiToken = "0HNJ0KC-T4GMEYF-PBQZPTE-5AVP50P" // 😱
   static apiUrl = "https://api.kinopoisk.dev/v1.3"
 
   static async fetchFromApi() {
