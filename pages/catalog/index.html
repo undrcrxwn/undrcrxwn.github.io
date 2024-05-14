@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../../common.css">
+  <link rel="stylesheet" href="../page.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script src="script.js"></script>
+<aside>
+  <div class="categories">
+    <h3>Категории</h3>
+    <div class="list">
+      <a onclick="showCategory(0)">💖 &nbsp;Все товары</a>
+      <a onclick="showCategory(1)">🚗 &nbsp;Машинки</a>
+      <a onclick="showCategory(2)">🧸 &nbsp;Куклы</a>
+      <a onclick="showCategory(3)">🧱 &nbsp;Конструкторы</a>
+      <a onclick="showCategory(4)">🚁 &nbsp;Квадрокоптеры</a>
+      <a onclick="showCategory(5)">🧠 &nbsp;Развивающие</a>
+    </div>
+  </div>
+  <div>
+    <div class="lottery">
+      <h3>Лотерея</h3>
+      <p id="result">000000</p>
+      <p>Сыграйте в лотерею и выиграйте скидку!</p>
+      <button onClick="play()">играть</button>
+    </div>
+  </div>
+</aside>
+<iframe class="gallery" id="gallery" src="../../components/gallery"></iframe>
+
+<script>
+  function play() {
+    const n = Math.round(Math.random() * (999999 - 100000 - 1) + 100000) + '';
+    let result = document.getElementById("result");
+    result.innerText = n;
+    let i = 0, a = 0, b = 0;
+    for(; i < 3; i++) {
+      a += Number(n[i]);
+      b += Number(n[i + 3]);
+    }
+    setTimeout(() => alert(
+      (a === b
+        ? "Вам повезло! Для вас скидка 50% на все товары!"
+        : "Вам не повезло :(")), 3);
+  }
+</script>
+</body>
+</html>

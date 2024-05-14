@@ -1,0 +1,98 @@
+body {
+    align-items: flex-start;
+}
+
+aside {
+    width: 400px;
+display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.categories, .lottery {
+    box-shadow: #ddd 0 3px 3px;
+    background: #fff;
+    padding: 25px 25px 30px;
+    border-radius: 25px;
+}
+
+.gallery {
+    width: 100%;
+    height: 100%;
+}
+
+.categories > * {
+    padding-left: 8px;
+}
+
+h3 {
+    margin: 0 0 20px 0;
+}
+
+.categories > .list {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+a:hover {
+    color: #8316e6;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #eee;
+}
+
+.lottery {
+    display: flex;
+    gap: 20px;
+    margin: 0 auto;
+    flex-direction: column;
+    background: #fff;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 25px;
+}
+
+.lottery > h3 {
+    margin: 0;
+}
+
+button {
+    width: 100%;
+    font-family: "Oceanic Trial", sans-serif;
+    font-size: 24px;
+    outline: none;
+    border: none;
+    background: #8316e6;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+#result {
+    color: #8316e6;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 48px;
+    margin: 0;
+}
