@@ -1,0 +1,107 @@
+body {
+    background: #fff;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+}
+
+
+h1 {
+    font-family: Gilroy;
+}
+
+a {
+    cursor: default;
+    text-decoration: none;
+    color: black;
+}
+
+.card {
+    width: 1000px;
+    height: 340px;
+    display: flex;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 50px;
+    padding: 50px;
+    gap: 50px;
+    margin-top: calc(50vh - 220px);
+}
+
+.gallery {
+    height: 500px;
+    width: 500px;
+}
+
+.info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.hover {
+    display: none;
+}
+
+.gallery:hover>.hover {
+    display: block;
+}
+
+.gallery:hover>.default {
+    display: none;
+}
+
+td:nth-child(2n-1) {
+    opacity: 0.7;
+    padding: 4px;
+    border-bottom: 2px solid #ddd;
+    width: 50%;
+}
+
+td:nth-child(2n) {
+    padding-left: 10px;
+    font-weight: bold;
+    font-family: Gilroy;
+}
+
+.link {
+    color: #7d25f0;
+    padding-left: 10px;
+}
+
+.price {
+    display: flex;
+    gap: 12px;
+    line-height: 14px;
+}
+
+.with-discount {
+    color: red;
+    font-weight: bold;
+}
+
+.discount {
+    background: red;
+    font-weight: bold;
+    color: white;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-top: -5px;
+}
+
+#rating_bar {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}

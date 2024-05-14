@@ -1,0 +1,39 @@
+body {
+    background-image: url("images/toys.png");
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    width: 900px;
+    font-family: "Oceanic Trial", sans-serif;
+    font-size: 36px;
+    text-align: center;
+    margin-top: -250px;
+}
+
+.discount {
+    background: red;
+    font-size: 24px;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 800;
+    font-family: "Oceanic Trial", sans-serif;
+    padding: 3px 10px;
+    display: inline-block;
+}
+
+a {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 20px;
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+a:hover {
+    transform: scale(1.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../../common.css">
+  <link rel="stylesheet" href="../page.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="2.html">
+  <div class="card">
+    <div class="gallery">
+      <img class="default" src="img/11.webp"/>
+      <img class="hover" src="img/12.webp"/>
+    </div>
+    <div class="info">
+      <h1>Конструктор LEGO City Центр 60380</h1>
+
+
+      <div class="price">
+        <span class="full">24 999 ₽</span>
+        <span class="with-discount">20 999 ₽</span>
+        <span class="discount">−16%</span>
+      </div>
+
+      <div id="rating_bar">
+        <span id="rate_1">⚪️</span>
+        <span id="rate_2">⚪️</span>
+        <span id="rate_3">⚪️</span>
+        <span id="rate_4">⚪️</span>
+        <span id="rate_5">⚪️</span>
+        <span class="link">22 отзыва</span>
+      </div>
+
+      <table>
+        <tr>
+          <td>Артикул</td>
+          <td>60380</td>
+        </tr>
+        <tr>
+          <td>Код товара</td>
+          <td>1000686178</td>
+        </tr>
+        <tr>
+          <td>Тип конструктора</td>
+          <td>блочные</td>
+        </tr>
+        <tr>
+          <td>Тематика конструктора</td>
+          <td>город</td>
+        </tr>
+        <tr>
+          <td>Количество деталей</td>
+          <td>2010</td>
+        </tr>
+        <tr>
+          <td>Возрастная группа</td>
+          <td>школьники (7-12)</td>
+        </tr>
+        <tr>
+          <td>Страна производства</td>
+          <td>Венгрия</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</a>
+<script>
+  let spans = document.getElementById("rating_bar")
+    .getElementsByTagName('span');
+
+  for(i=0;i<spans.length;i++)
+    spans[i].onmouseover=hoverStar;
+
+  function hoverStar()
+  {
+    for(i=0;i<this.id.charAt(5);i++)
+      spans[i].innerText='⭐';
+
+    for(i=this.id.charAt(5);i<5;i++)
+      spans[i].innerText='⚪️';
+  }
+</script>
+</body>
+</html>
